@@ -72,6 +72,13 @@
     .paper .venue { font-style: italic; color: var(--muted); }
     .paper .plinks { }
 
+    /* Experience */
+    .exp { width: 100%; border-collapse: separate; border-spacing: 0 18px; }
+    .exp td { vertical-align: top; }
+    .exp-title { font-weight: 700; }
+    .exp-sub { color: var(--muted); }
+    .exp-date { text-align: right; white-space: nowrap; color: var(--muted); }
+
     .misc { margin-top: 8px; }
 
     /* Responsive */
@@ -113,48 +120,50 @@
       </div>
     </div>
 
-    <h2>Research</h2>
-    <table class="papers">
+    <h2>Experience</h2>
+    <table class="exp">
       <tr>
-        <td class="thumb">
-          <img src="assets/img/1.jpg" alt="paper 1 teaser">
+        <td class="exp-main">
+          <span class="exp-title">Machine Intelligence Lab @ JBNU</span><br>
+          <span class="exp-sub">Undergraduate Researcher · Advisor:
+            <a href="https://sites.google.com/view/miljbnu/home" target="_blank" rel="noopener">Prof. Sang Jun Lee</a></span>
         </td>
-        <td class="paper">
-          <span class="title">First Paper Title Goes Here: A Descriptive Subtitle</span><br>
-          <span class="authors"><b>Heeyeon Kim</b>, <a href="#">Coauthor One</a>, <a href="#">Coauthor Two</a>, Advisor Name</span><br>
-          <span class="venue">Conference / Journal Name, 2026</span><br>
-          <span class="plinks"><a href="#">project page</a> / <a href="#">paper</a> / <a href="#">code</a></span>
-        </td>
+        <td class="exp-date">Mar 2026 – Present</td>
       </tr>
       <tr>
-        <td class="thumb">
-          <img src="assets/img/2.jpg" alt="paper 2 teaser">
+        <td class="exp-main">
+          <span class="exp-title">Vision Intelligence Lab @ JBNU</span><br>
+          <span class="exp-sub">Undergraduate Researcher · Advisor:
+            <a href="https://jbnu-vilab.github.io/" target="_blank" rel="noopener">Prof. Se-Ho Lee</a></span>
         </td>
-        <td class="paper">
-          <span class="title">Second Paper Title Goes Here</span><br>
-          <span class="authors"><a href="#">Coauthor One</a>, <b>Heeyeon Kim</b>, <a href="#">Coauthor Two</a>, Advisor Name</span><br>
-          <span class="venue">Conference / Journal Name, 2025</span><br>
-          <span class="plinks"><a href="#">project page</a> / <a href="#">paper</a></span>
-        </td>
-      </tr>
-      <tr>
-        <td class="thumb">
-          <img src="assets/img/3.jpg" alt="paper 3 teaser">
-        </td>
-        <td class="paper">
-          <span class="title">Third Paper Title Goes Here</span><br>
-          <span class="authors"><b>Heeyeon Kim</b>, <a href="#">Coauthor One</a>, Advisor Name</span><br>
-          <span class="venue">Conference / Journal Name, 2024</span><br>
-          <span class="plinks"><a href="#">project page</a> / <a href="#">paper</a> / <a href="#">code</a></span>
-        </td>
+        <td class="exp-date">Sep 2024 – Mar 2026</td>
       </tr>
     </table>
 
-    <h2>Misc</h2>
-    <p class="misc">
-      Add anything here — talks, teaching, service, awards, or a short personal note.
-      You can also link to your <a href="#">blog</a> or other pages.
-    </p>
+    <h2>Publications</h2>
+    <table class="papers">
+      <tr>
+        <td class="thumb">
+          <img src="assets/img/1.jpg" alt="publication teaser">
+        </td>
+        <td class="paper">
+          <span class="title">Method for Detecting Unstructured Obstacles Based on Monocular Depth Estimation</span><br>
+          <span class="authors"><b>Heeyeon Kim</b>, Jaemyeong Lee, Sang Jun Lee*</span><br>
+          <span class="venue">The 21st IEMEK Symposium on Embedded Technology (ISET), 2026 &nbsp;<b>(Oral, Best Oral Presentation Award)</b></span><br>
+          <span class="plinks"><a href="#">paper</a> / <a href="#">slide</a></span>
+        </td>
+      </tr>
+      <tr>
+        <td class="thumb">
+          <img src="assets/img/2.jpg" alt="publication teaser">
+        </td>
+        <td class="paper">
+          <span class="title">Robust Ground Plane Modeling Based on Monocular Depth Estimation for Unstructured Obstacle Detection</span><br>
+          <span class="authors"><b>Heeyeon Kim</b>, Jaemyeong Lee, Sang Jun Lee*</span><br>
+          <span class="venue">In preparation, The IEMEK Journal of Embedded Systems and Applications, 2026</span>
+        </td>
+      </tr>
+    </table>
 
   </div>
 </body>
