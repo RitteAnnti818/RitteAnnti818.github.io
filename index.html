@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heeyeon Kim</title>
+  <meta name="description" content="Heeyeon Kim — academic homepage">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --link: #1772d0;
+      --link-hover: #f09228;
+      --text: #000;
+      --muted: #333;
+      --max: 850px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
+      font-weight: 300;
+      color: var(--text);
+      background: #fff;
+      margin: 0;
+      line-height: 1.5;
+      font-size: 16px;
+    }
+    .container { max-width: var(--max); margin: 0 auto; padding: 40px 24px 80px; }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { color: var(--link-hover); }
+
+    /* Header */
+    h1.name {
+      text-align: center;
+      font-weight: 300;
+      font-size: 2.2rem;
+      margin: 8px 0 28px;
+      letter-spacing: 0.01em;
+    }
+    .header { display: flex; gap: 32px; align-items: flex-start; }
+    .bio { flex: 1 1 60%; }
+    .bio p { margin: 0 0 16px; }
+    .links { text-align: center; margin-top: 8px; font-size: 1.05rem; }
+    .links a { margin: 0 2px; }
+    .photo { flex: 0 0 230px; text-align: center; }
+    .photo img {
+      width: 200px; height: auto; border-radius: 6px;
+    }
+
+    /* Sections */
+    h2 {
+      font-weight: 300;
+      font-size: 1.7rem;
+      margin: 48px 0 8px;
+      border: none;
+    }
+
+    /* Papers */
+    .papers { width: 100%; border-collapse: separate; border-spacing: 0 24px; }
+    .papers td { vertical-align: top; }
+    .thumb { width: 200px; padding-right: 24px; }
+    .thumb img {
+      width: 180px; height: auto; border-radius: 4px;
+      background: #f2f2f2;
+    }
+    .paper .title { font-weight: 700; }
+    .paper .authors { }
+    .paper .authors b { font-weight: 700; }
+    .paper .venue { font-style: italic; color: var(--muted); }
+    .paper .plinks { }
+
+    .misc { margin-top: 8px; }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .header { flex-direction: column-reverse; align-items: center; text-align: left; }
+      .photo { flex-basis: auto; margin-bottom: 16px; }
+      .papers, .papers tbody, .papers tr, .papers td { display: block; width: 100%; }
+      .thumb { padding-right: 0; margin-bottom: 8px; }
+      .thumb img { width: 100%; max-width: 320px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <h1 class="name">Heeyeon Kim</h1>
+
+    <div class="header">
+      <div class="bio">
+        <p>
+          I am a [undergraduate / M.S. / Ph.D.] student in [Your Department] at
+          [Your University], under the supervision of
+          <a href="#">Prof. Advisor Name</a>.
+        </p>
+        <p>
+          My research interests span [field one], [field two], and [field three].
+          Write two or three sentences here about what you work on and what you
+          care about. Replace this placeholder with your own description.
+        </p>
+        <p class="links">
+          <a href="mailto:heeyeon23@jbnu.ac.kr">Email</a> /
+          <a href="/assets/pdf/example_pdf.pdf">CV</a> /
+          <a href="https://github.com/RitteAnnti818">Github</a> /
+          <a href="#">LinkedIn</a>
+        </p>
+      </div>
+      <div class="photo">
+        <img src="assets/img/pic.jpg" alt="Heeyeon Kim">
+      </div>
+    </div>
+
+    <h2>Research</h2>
+    <table class="papers">
+      <tr>
+        <td class="thumb">
+          <img src="assets/img/1.jpg" alt="paper 1 teaser">
+        </td>
+        <td class="paper">
+          <span class="title">First Paper Title Goes Here: A Descriptive Subtitle</span><br>
+          <span class="authors"><b>Heeyeon Kim</b>, <a href="#">Coauthor One</a>, <a href="#">Coauthor Two</a>, Advisor Name</span><br>
+          <span class="venue">Conference / Journal Name, 2026</span><br>
+          <span class="plinks"><a href="#">project page</a> / <a href="#">paper</a> / <a href="#">code</a></span>
+        </td>
+      </tr>
+      <tr>
+        <td class="thumb">
+          <img src="assets/img/2.jpg" alt="paper 2 teaser">
+        </td>
+        <td class="paper">
+          <span class="title">Second Paper Title Goes Here</span><br>
+          <span class="authors"><a href="#">Coauthor One</a>, <b>Heeyeon Kim</b>, <a href="#">Coauthor Two</a>, Advisor Name</span><br>
+          <span class="venue">Conference / Journal Name, 2025</span><br>
+          <span class="plinks"><a href="#">project page</a> / <a href="#">paper</a></span>
+        </td>
+      </tr>
+      <tr>
+        <td class="thumb">
+          <img src="assets/img/3.jpg" alt="paper 3 teaser">
+        </td>
+        <td class="paper">
+          <span class="title">Third Paper Title Goes Here</span><br>
+          <span class="authors"><b>Heeyeon Kim</b>, <a href="#">Coauthor One</a>, Advisor Name</span><br>
+          <span class="venue">Conference / Journal Name, 2024</span><br>
+          <span class="plinks"><a href="#">project page</a> / <a href="#">paper</a> / <a href="#">code</a></span>
+        </td>
+      </tr>
+    </table>
+
+    <h2>Misc</h2>
+    <p class="misc">
+      Add anything here — talks, teaching, service, awards, or a short personal note.
+      You can also link to your <a href="#">blog</a> or other pages.
+    </p>
+
+  </div>
+</body>
+</html>
